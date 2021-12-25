@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import ComponentC from './components/ComponentC/ComponentC';
+// import { UserProvider } from './components/UserContext';
+import Counter from '../src/ReactHooks/useState/useState'
+import Resource from './ReactHooks/UseEffect/UseEffect';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <UserProvider value="Shalini">
+        <ComponentC/>
+      </UserProvider> */}
+      <Counter/>
+     <Resource/>
     </div>
   );
 }
